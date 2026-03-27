@@ -1,0 +1,43 @@
+{
+  "config": {
+    "symbol": "XAUUSD",
+    "spread": 0.3,
+    "slippage_max": 0.2,
+    "risk_per_trade": 1.0,
+    "min_volatility": 3.5,
+    "trailing_activation": 2.0,
+    "trailing_distance": 1.0,
+    "market_range_threshold": 8.0,
+    "market_trend_threshold": 1.0,
+    "base_sl_tp": 10.0,
+    "time_exit_bars": 15
+  },
+  "metrics": {
+    "total_trades": 1,
+    "win_rate": 100.0,
+    "net_profit": 1.32,
+    "max_drawdown": 0.0,
+    "profit_factor": Infinity,
+    "expectancy": 1.32,
+    "avg_rr": 0
+  },
+  "trades": [
+    {
+      "entry_price": 2019.9096352237634,
+      "side": "BUY",
+      "strategy": "Breakout",
+      "entry_time": "2026-03-26T21:26:57.018688",
+      "sl": 2009.9096352237634,
+      "tp": 2034.9096352237634,
+      "exit_price": 2021.2259144542197,
+      "exit_time": "2026-03-26T21:55:57.018688",
+      "pnl": 1.3162792304563027,
+      "status": "CLOSED",
+      "peak_price": 2022.53,
+      "lowest_price": Infinity,
+      "trailing_active": true,
+      "exit_reason": "Trailing"
+    }
+  ],
+  "timestamp": "2026-03-26T22:48:57.026558"
+}

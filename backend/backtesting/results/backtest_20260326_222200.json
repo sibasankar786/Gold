@@ -1,0 +1,26 @@
+{
+  "config": {
+    "symbol": "XAUUSD",
+    "spread": 0.2,
+    "slippage_max": 0.1,
+    "risk_per_trade": 1.0,
+    "min_volatility": 3.5,
+    "trailing_activation": 2.0,
+    "trailing_distance": 1.0,
+    "market_range_threshold": 8.0,
+    "market_trend_threshold": 1.0,
+    "base_sl_tp": 10.0,
+    "time_exit_bars": 15
+  },
+  "metrics": {
+    "total_trades": 0,
+    "win_rate": 0,
+    "net_profit": 0,
+    "max_drawdown": 0,
+    "profit_factor": 0,
+    "expectancy": 0,
+    "avg_rr": 0
+  },
+  "trades": [],
+  "timestamp": "2026-03-26T22:22:00.993318"
+}

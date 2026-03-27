@@ -1,0 +1,75 @@
+{
+  "config": {
+    "symbol": "XAUUSD",
+    "spread": 0.3,
+    "slippage_max": 0.2,
+    "risk_per_trade": 1.0,
+    "min_volatility": 3.5,
+    "trailing_activation": 2.0,
+    "trailing_distance": 1.0,
+    "market_range_threshold": 8.0,
+    "market_trend_threshold": 1.0,
+    "base_sl_tp": 10.0,
+    "time_exit_bars": 15
+  },
+  "metrics": {
+    "total_trades": 3,
+    "win_rate": 100.0,
+    "net_profit": 2.98,
+    "max_drawdown": 0.0,
+    "profit_factor": 999.99,
+    "expectancy": 0.99,
+    "avg_rr": 0.0
+  },
+  "trades": [
+    {
+      "entry_price": 2009.4627107040462,
+      "side": "BUY",
+      "strategy": "Breakout",
+      "entry_time": "2026-03-26T21:31:41.482717",
+      "sl": 1999.4627107040462,
+      "tp": 2024.4627107040462,
+      "exit_price": 2010.5669870694999,
+      "exit_time": "2026-03-26T21:48:41.482717",
+      "pnl": 1.104276365453643,
+      "status": "CLOSED",
+      "peak_price": 2012.03,
+      "lowest_price": Infinity,
+      "trailing_active": true,
+      "exit_reason": "Trailing"
+    },
+    {
+      "entry_price": 2016.3394866027074,
+      "side": "BUY",
+      "strategy": "Breakout",
+      "entry_time": "2026-03-26T21:53:41.482717",
+      "sl": 2006.3394866027074,
+      "tp": 2031.3394866027074,
+      "exit_price": 2017.0645251061462,
+      "exit_time": "2026-03-26T21:54:41.482717",
+      "pnl": 0.7250385034387818,
+      "status": "CLOSED",
+      "peak_price": 2018.55,
+      "lowest_price": Infinity,
+      "trailing_active": true,
+      "exit_reason": "Trailing"
+    },
+    {
+      "entry_price": 2014.2660971637067,
+      "side": "BUY",
+      "strategy": "Breakout",
+      "entry_time": "2026-03-26T22:38:41.482717",
+      "sl": 2004.2660971637067,
+      "tp": 2029.2660971637067,
+      "exit_price": 2015.4156977027717,
+      "exit_time": "2026-03-26T22:40:41.482717",
+      "pnl": 1.149600539064977,
+      "status": "CLOSED",
+      "peak_price": 2016.78,
+      "lowest_price": Infinity,
+      "trailing_active": true,
+      "exit_reason": "Trailing"
+    }
+  ],
+  "timestamp": "2026-03-26T22:49:41.492028"
+}

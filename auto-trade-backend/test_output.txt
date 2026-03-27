@@ -1,0 +1,29 @@
+=== STARTING AUTOTRADE VERIFICATION ===
+
+1. Ensuring system is ON
+
+--- Injecting Market Price: 4000 ---
+
+[Triggered Entry (Expected: BUY @ 4000)] => Position: BUY | Entry: 4000 | Trailing: false | Peak: 4000 | Lowest: 3995
+
+--- Injecting Market Price: 4005 ---
+
+[Hit +5 (Expected: BUY, TrailingActive=true)] => Position: BUY | Entry: 4000 | Trailing: true | Peak: 4005 | Lowest: 3995
+
+--- Injecting Market Price: 4010 ---
+
+[Hit Peak (Expected: BUY, Peak=4010, TrailingActive=true)] => Position: BUY | Entry: 4000 | Trailing: true | Peak: 4010 | Lowest: 3995
+
+--- Injecting Market Price: 4008 ---
+
+[Hit -2 from Peak (Expected: NONE, Position Exited)] => Position: NONE | Entry: 0 | Trailing: false | Peak: 0 | Lowest: 0
+
+--- Injecting Market Price: 4000 ---
+
+[Triggered Entry 2 (Expected: BUY @ 4000)] => Position: BUY | Entry: 4000 | Trailing: false | Peak: 4000 | Lowest: 0
+
+--- Injecting Market Price: 3995 ---
+
+[Hit -5 Reversal (Expected: SELL @ 3995)] => Position: SELL | Entry: 3995 | Trailing: false | Peak: 4000 | Lowest: 3995
+
+=== VERIFICATION COMPLETE ===

@@ -1,0 +1,593 @@
+
+> auto-trade-backend@0.0.1 start:dev
+> nest start --watch
+
+[2J[3J[H[[90m4:44:49 pm[0m] Starting compilation in watch mode...
+
+[[90m4:44:54 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +32ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +26ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +5ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAutoTradeModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +6ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAutoTradeController {/auto-trade}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/status, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/toggle, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/price-update, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[AutoTradePollingService] [39m[32mStarting Price Polling Loop (1000ms)[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32mAuto-Trade Core Service Initialized[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:44:55 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:45:16 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[REVERSAL] Entry Defeated @ 4000. Switching to BUY.[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:45:17 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[TRAILING] BUY Trailing Activated @ 4005[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:57:30 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[EXIT] Trailing Stop Hit @ 4000. Peak was 4005[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:57:30 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[ENTRY] Auto-Trade Triggered. Position: BUY @ 4005[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:57:30 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[TRAILING] BUY Trailing Activated @ 4010[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:57:30 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[EXIT] Trailing Stop Hit @ 4008. Peak was 4010[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:57:30 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[ENTRY] Auto-Trade Triggered. Position: BUY @ 4000[39m
+[32m[Nest] 21612  - [39m24/03/2026, 4:57:30 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[REVERSAL] Entry Defeated @ 3995. Switching to SELL.[39m
+[32m[Nest] 21612  - [39m24/03/2026, 5:03:44 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[REVERSAL] Entry Defeated @ 4000. Switching to BUY.[39m
+[32m[Nest] 21612  - [39m24/03/2026, 5:03:44 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[TRAILING] BUY Trailing Activated @ 4005[39m
+[32m[Nest] 21612  - [39m24/03/2026, 5:03:44 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[EXIT] Trailing Stop Hit @ 4008. Peak was 4010[39m
+[32m[Nest] 21612  - [39m24/03/2026, 5:03:44 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[ENTRY] Auto-Trade Triggered. Position: BUY @ 4000[39m
+[32m[Nest] 21612  - [39m24/03/2026, 5:03:44 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[REVERSAL] Entry Defeated @ 3995. Switching to SELL.[39m
+[2J[3J[H[[90m5:06:24 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:06:26 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +44ms[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +28ms[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +4ms[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAutoTradeModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAutoTradeController {/auto-trade}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/status, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/toggle, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/price-update, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[AutoTradePollingService] [39m[32mStarting Price Polling Loop (1000ms)[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32mAuto-Trade Core Service Initialized[39m
+[32m[Nest] 6412  - [39m24/03/2026, 5:06:27 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[Nest] 6412  - 24/03/2026, 5:06:27 pm   ERROR [NestApplication] Error: listen EADDRINUSE: address already in use :::3001 +2ms
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\node_modules\@nestjs\core\nest-application.js:178:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async bootstrap (C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\src\main.ts:7:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v22.19.0
+[2J[3J[H[[90m5:10:40 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:10:41 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +49ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +32ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAutoTradeModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAutoTradeController {/auto-trade}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/status, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/toggle, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/price-update, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[AutoTradePollingService] [39m[32mStarting Price Polling Loop (1000ms)[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32mAuto-Trade Core Service Initialized[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:42 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:57 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[REVERSAL] Entry Defeated @ 4000. Switching to BUY.[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:58 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[JOURNAL] Sent completed Loss trade to main DB.[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:58 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[TRAILING] BUY Trailing Activated @ 4005[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:58 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[EXIT] Trailing Stop Hit @ 4008. Peak was 4010[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:59 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[JOURNAL] Sent completed Win trade to main DB.[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:59 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[ENTRY] Auto-Trade Triggered. Position: BUY @ 4000[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:59 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[REVERSAL] Entry Defeated @ 3995. Switching to SELL.[39m
+[32m[Nest] 21664  - [39m24/03/2026, 5:10:59 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32m[JOURNAL] Sent completed Loss trade to main DB.[39m
+[2J[3J[H[[90m5:51:04 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:51:07 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:51:08 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:51:08 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:51:09 pm[0m] File change detected. Starting incremental compilation...
+
+[32m[Nest] 30776  - [39m24/03/2026, 5:51:09 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 30776  - [39m24/03/2026, 5:51:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +49ms[39m
+[32m[Nest] 30776  - [39m24/03/2026, 5:51:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 30776  - [39m24/03/2026, 5:51:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 30776  - [39m24/03/2026, 5:51:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[[90m5:51:10 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:51:10 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:51:11 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +36ms[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +28ms[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +13ms[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAutoTradeModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +6ms[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAutoTradeController {/auto-trade}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/status, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/toggle, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/price-update, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[AutoTradePollingService] [39m[32mStarting Price Polling Loop (1000ms)[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32mAuto-Trade Core Service Initialized[39m
+[32m[Nest] 34048  - [39m24/03/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[Nest] 34048  - 24/03/2026, 5:51:12 pm   ERROR [NestApplication] Error: listen EADDRINUSE: address already in use :::3001 +4ms
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\node_modules\@nestjs\core\nest-application.js:178:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async bootstrap (C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\src\main.ts:7:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v22.19.0
+[2J[3J[H[[90m5:51:20 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:51:22 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +33ms[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +23ms[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +3ms[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAutoTradeModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAutoTradeController {/auto-trade}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/status, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/toggle, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/price-update, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:23 pm [32m    LOG[39m [38;5;3m[AutoTradePollingService] [39m[32mStarting Price Polling Loop (1000ms)[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:24 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32mAuto-Trade Core Service Initialized[39m
+[32m[Nest] 33960  - [39m24/03/2026, 5:51:24 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[2J[3J[H[[90m5:52:06 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:52:07 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +39ms[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +33ms[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +5ms[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAutoTradeModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAutoTradeController {/auto-trade}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/toggle, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/price-update, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[AutoTradePollingService] [39m[32mStarting Price Polling Loop (1000ms)[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32mAuto-Trade Core Service Initialized[39m
+[32m[Nest] 27436  - [39m24/03/2026, 5:52:08 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[Nest] 27436  - 24/03/2026, 5:52:08 pm   ERROR [NestApplication] Error: listen EADDRINUSE: address already in use :::3001 +3ms
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\node_modules\@nestjs\core\nest-application.js:178:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async bootstrap (C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\src\main.ts:7:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v22.19.0
+[2J[3J[H[[90m6:02:58 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m6:03:00 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:02 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +57ms[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:03 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +38ms[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:03 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +7ms[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:03 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAutoTradeModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:03 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:03 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:03 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAutoTradeController {/auto-trade}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:03 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:03 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/toggle, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:03 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/price-update, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:03 pm [32m    LOG[39m [38;5;3m[AutoTradePollingService] [39m[32mStarting Price Polling Loop (1000ms)[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:03 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32mAuto-Trade Core Service Initialized[39m
+[32m[Nest] 17220  - [39m24/03/2026, 6:03:03 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[2J[3J[H[[90m6:03:11 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m6:03:13 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m6:03:13 pm[0m] File change detected. Starting incremental compilation...
+
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +47ms[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +30ms[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +4ms[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAutoTradeModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +3ms[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAutoTradeController {/auto-trade}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/status, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/toggle, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auto-trade/price-update, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[AutoTradePollingService] [39m[32mStarting Price Polling Loop (1000ms)[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[AutoTradeService] [39m[32mAuto-Trade Core Service Initialized[39m
+[32m[Nest] 12040  - [39m24/03/2026, 6:03:14 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[Nest] 12040  - 24/03/2026, 6:03:14 pm   ERROR [NestApplication] Error: listen EADDRINUSE: address already in use :::3001 +3ms
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\node_modules\@nestjs\core\nest-application.js:178:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async bootstrap (C:\Users\GOKU\Downloads\Info\Sharemarket\XAUUSD\auto-trade-backend\src\main.ts:7:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v22.19.0
+[2J[3J[H[[90m6:03:28 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m87[0m:[93m18[0m - [91merror[0m[90m TS2339: [0mProperty 'logTradeToPython' does not exist on type 'AutoTradeService'.
+
+[7m87[0m       await this.logTradeToPython(state, price);
+[7m  [0m [91m                 ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m95[0m:[93m18[0m - [91merror[0m[90m TS2339: [0mProperty 'logTradeToPython' does not exist on type 'AutoTradeService'.
+
+[7m95[0m       await this.logTradeToPython(state, price);
+[7m  [0m [91m                 ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m123[0m:[93m18[0m - [91merror[0m[90m TS2339: [0mProperty 'logTradeToPython' does not exist on type 'AutoTradeService'.
+
+[7m123[0m       await this.logTradeToPython(state, price);
+[7m   [0m [91m                 ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m131[0m:[93m18[0m - [91merror[0m[90m TS2339: [0mProperty 'logTradeToPython' does not exist on type 'AutoTradeService'.
+
+[7m131[0m       await this.logTradeToPython(state, price);
+[7m   [0m [91m                 ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m166[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m166[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m6:03:31 pm[0m] Found 5 errors. Watching for file changes.
+
+[2J[3J[H[[90m6:03:57 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m170[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m6:03:58 pm[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m7:22:18 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m170[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m170[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m178[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m178[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m7:22:19 pm[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:22:31 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m170[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m170[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m178[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m178[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m7:22:33 pm[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:22:36 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m170[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m170[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m178[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m178[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m7:22:37 pm[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:29:40 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m154[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m154[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m162[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m162[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m7:29:41 pm[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:29:56 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m190[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m190[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m198[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m198[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m7:29:56 pm[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:00:33 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m191[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m191[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m199[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m199[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m8:00:35 pm[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:02:02 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m191[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m191[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m199[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m199[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m8:02:04 pm[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:02:12 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m191[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m191[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m199[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m199[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m8:02:14 pm[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:02:23 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m194[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m194[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m202[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m202[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m8:02:26 pm[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:02:29 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m195[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m195[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m203[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m203[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m8:02:31 pm[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:02:37 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m59[0m:[93m39[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 2.
+
+[7m59[0m         await this.handleEntry(price, strategy);
+[7m  [0m [91m                                      ~~~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m202[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m202[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m210[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m210[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m8:02:38 pm[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:02:45 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m59[0m:[93m39[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 2.
+
+[7m59[0m         await this.handleEntry(price, strategy);
+[7m  [0m [91m                                      ~~~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m202[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m202[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m210[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m210[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m8:02:45 pm[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:02:56 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m59[0m:[93m39[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 2.
+
+[7m59[0m         await this.handleEntry(price, strategy);
+[7m  [0m [91m                                      ~~~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m105[0m:[93m18[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 0.
+
+[7m105[0m       await this.resetState();
+[7m   [0m [91m                 ~~~~~~~~~~[0m
+
+  [96msrc/auto-trade/auto-trade.service.ts[0m:[93m255[0m:[93m28[0m
+    [7m255[0m   private async resetState(state: TradeState) {
+    [7m   [0m [96m                           ~~~~~~~~~~~~~~~~~[0m
+    An argument for 'state' was not provided.
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m117[0m:[93m20[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 0.
+
+[7m117[0m         await this.resetState();
+[7m   [0m [91m                   ~~~~~~~~~~[0m
+
+  [96msrc/auto-trade/auto-trade.service.ts[0m:[93m255[0m:[93m28[0m
+    [7m255[0m   private async resetState(state: TradeState) {
+    [7m   [0m [96m                           ~~~~~~~~~~~~~~~~~[0m
+    An argument for 'state' was not provided.
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m150[0m:[93m18[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 0.
+
+[7m150[0m       await this.resetState();
+[7m   [0m [91m                 ~~~~~~~~~~[0m
+
+  [96msrc/auto-trade/auto-trade.service.ts[0m:[93m255[0m:[93m28[0m
+    [7m255[0m   private async resetState(state: TradeState) {
+    [7m   [0m [96m                           ~~~~~~~~~~~~~~~~~[0m
+    An argument for 'state' was not provided.
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m162[0m:[93m20[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 0.
+
+[7m162[0m         await this.resetState();
+[7m   [0m [91m                   ~~~~~~~~~~[0m
+
+  [96msrc/auto-trade/auto-trade.service.ts[0m:[93m255[0m:[93m28[0m
+    [7m255[0m   private async resetState(state: TradeState) {
+    [7m   [0m [96m                           ~~~~~~~~~~~~~~~~~[0m
+    An argument for 'state' was not provided.
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m202[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m202[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m210[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m210[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m8:02:57 pm[0m] Found 7 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:03:50 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m204[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m204[0m         return null;
+[7m   [0m [91m        ~~~~~~[0m
+
+[96msrc/auto-trade/auto-trade.service.ts[0m:[93m212[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m212[0m       return null;
+[7m   [0m [91m      ~~~~~~[0m
+
+[[90m8:03:50 pm[0m] Found 2 errors. Watching for file changes.
+
